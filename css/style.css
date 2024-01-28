@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pt-8{
+        padding-top: 8rem !important;
+}
+.mt-6{
+    margin-top: 4rem !important;
+}
+main , section{
+    padding: 0 3rem;
+}
+
+h2{
+    border-bottom: 5px solid black;
+    display: inline-block;
+}
+.timeline-contents{
+    margin-left: 2rem;
+    border-left: 1.5px solid rgb(32, 88, 210);
+}
+.timeline-contents .box{
+    position: relative;
+    padding: 12px;
+}
+.timeline-contents .box::before{
+content: "";
+position: absolute;
+height: 16px;
+width: 16px;
+border-radius: 50%;
+border: 1.5px solid rgb(32, 88, 210);
+top:50%;
+right: calc(100% + 5px);
+background-color: white;
+}
+.card-text{
+    height: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#certifications > ul,.social-media >ul{
+list-style: none;
+}
+.social-media >ul>li{
+    margin: 2rem 0;
+}
