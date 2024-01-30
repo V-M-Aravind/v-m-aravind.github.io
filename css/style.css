@@ -1,3 +1,4 @@
+/* general */
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@
 .mt-6{
     margin-top: 4rem !important;
 }
+
 main , section{
     padding: 0 1rem;
 }
@@ -17,6 +19,24 @@ h2{
     border-bottom: 5px solid black;
     display: inline-block;
 }
+/* my-details*/
+.my-details .icon-link{
+    text-decoration:none;
+    color: rgb(78, 78, 101);
+    font-weight: 600;
+}
+.my-details .icon-link:hover{
+    color: rgb(78, 78, 101);
+}
+
+/* projects */
+.card-text{
+    height: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* timeline-css */
 .timeline-contents{
     margin-left: 2rem;
     border-left: 1.5px solid rgb(32, 88, 210);
@@ -25,33 +45,19 @@ h2{
     position: relative;
     padding: 12px;
 }
-.my-details .icon-link{
-    text-decoration:none;
-    color: rgb(78, 78, 101);
-    font-weight: 600;
-}
-.my-details .icon-link:hover{
-    color: rgb(78, 78, 101);
-}:
 .timeline-contents .box::before{
-content: "";
-position: absolute;
-height: 16px;
-width: 16px;
-border-radius: 50%;
-border: 1.5px solid rgb(32, 88, 210);
-top:50%;
-right: calc(100% + 5px);
-background-color: white;
-}
-.card-text{
-    height: 175px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-#certifications > ul,.social-media >ul{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(32, 88, 210);
+    top:50%;
+    right: calc(100% + 5px);
+    background-color: white;
+    }
+
+/* certifications */
+#certifications > ul{
 list-style: none;
-}
-.social-media >ul>li{
-    margin: 2rem 0;
 }

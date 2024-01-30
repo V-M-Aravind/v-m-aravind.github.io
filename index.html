@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="description"
+        content="Portfolio site for V M Aravind, an emerging fullstack developer with 2+ years of hands-on experience">
     <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
     <link rel="manifest" href="public/site.webmanifest">
     <title>V-M-Aravind</title>
-    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body class="bg-light">
@@ -85,16 +87,16 @@
                                         vmaravind07@gmail.com</span>
                                 </a>
                             </div>
-                            <div class="d-flex align-items-center m-3"><a class="icon-link">
+                            <div class="d-flex align-items-center m-3"><span class="icon-link">
                                     <img src="/public/cake2.svg" alt="DOB" width="32" height="32">:<span class="ms-1">
                                         7th Jan 1998</span>
-                                </a>
+                                </span>
                             </div>
-                            <div class="d-flex align-items-center m-3"><a class="icon-link">
+                            <div class="d-flex align-items-center m-3"><span class="icon-link">
                                     <img src="/public/geo-alt.svg" alt="location" width="32" height="32">:<span
                                         class="ms-1">
-                                        Location</span>
-                                </a>
+                                        Kottayam, Kerala, India</span>
+                                </span>
                             </div>
                             <div class="d-flex align-items-center m-3"><a class="icon-link"
                                     href="https://linkedin.com/in/vm-aravind">
@@ -203,7 +205,7 @@
         <div class="row d-flex justify-content-center justify-content-lg-start">
             <div class="card m-2" style="width: 18rem;">
                 <img src="/public/covid-tracker.webp" class="card-img-top" alt="covid-tracker" data-aos="fade-in"
-                    data-aos-delay="200" data-aos-once=“true”>
+                    data-aos-delay="200" data-aos-once=“true” loading="lazy">
                 <div class="card-body">
                     <h5 class="card-title">COVID-TRACKER</h5>
                     <p class="card-text">A simple React project used to show covid data of the world
@@ -223,7 +225,7 @@
             </div>
             <div class="card m-2" style="width: 18rem;">
                 <img src="/public/taskify-home.png" class="card-img-top" alt="covid-tracker" data-aos="fade-in"
-                    data-aos-once=“true” data-aos-delay="200">
+                    data-aos-once=“true” data-aos-delay="200" loading="lazy">
                 <div class="card-body">
                     <h5 class="card-title">TASKIFY</h5>
                     <p class="card-text">A ToDo list capable of marking todo as completed and non
@@ -354,23 +356,6 @@
 
         window.onscroll = () => {
             let currentElId = "";
-            // if (pageYOffset > lastScrollTopPos) {
-            //     console.log("downward");
-            //     sections.forEach((section) => {
-            //         const sectionTop = section.offsetTop;
-            //         if (pageYOffset >= sectionTop - 100) {
-            //             currentElId = section.getAttribute("id");
-            //         }
-            //     });
-            // } else if (pageYOffset < lastScrollTopPos) {
-            //     console.log("upward");
-            //     sections.forEach((section) => {
-            //         const sectionTop = section.offsetTop;
-            //         if (pageYOffset >= sectionTop - 350) {
-            //             currentElId = section.getAttribute("id");
-            //         }
-            //     });
-            // }
             lastScrollTopPos = pageYOffset <= 0 ? 0 : pageYOffset;
 
             sections.forEach((section) => {
@@ -379,13 +364,6 @@
                     currentElId = section.getAttribute("id");
                 }
             });
-            console.log(currentElId)
-            // if (currentElId === "experience" || currentElId === "education") {
-            //     if (document.getElementById("qualification-link")) {
-            //         currentElId = "qualification"
-            //     }
-
-            // }
 
             navLinks.forEach((li) => {
                 li.classList.remove("active");
