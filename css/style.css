@@ -35,6 +35,9 @@ h2{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.card{
+    background-color: rgb(228, 230, 231);
+}
 
 /* timeline-css */
 .timeline-contents{
